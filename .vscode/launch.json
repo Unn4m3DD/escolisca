@@ -1,0 +1,10 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "CodeLens (Launch) - BMPApp",
+      "request": "launch",
+      "mainClass": "aula7.BMPApp"
+    }
+  ]
+}
