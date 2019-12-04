@@ -4,14 +4,10 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.function.Predicate;
+import java.util.stream.Collectors;
 
 public class ListsProcess {
-    public static <E> List<E> filter(List<E> l, Predicate<E> filter){
-        List<E> result = new ArrayList<>();
-        for(E elem: l){
-            if(filter.test(elem))
-            result.add(elem);
-        }
-        return result;
+    public static <E> List<E> filter(List<E> l, Predicate<E> filter) {
+        return l.stream().filter(filter).collect(Collectors.toList());
     }
 }
