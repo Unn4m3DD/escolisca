@@ -4,8 +4,8 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class ParserCSV {
-    public static ListaPessoas parseScanner(Scanner k) {
+public class CSVv implements Parser {
+    public ListaPessoas parseScanner(Scanner k) {
         ListaPessoas result = new ListaPessoas();
         while (k.hasNextLine()) {
             String[] line = k.nextLine().split("    ");
@@ -17,11 +17,15 @@ public class ParserCSV {
         return result;
     }
 
-    public static void writeFw(ListaPessoas lp, FileWriter fw) throws IOException {
-        fw.write("vCard\n");
-        for(Pessoa p: lp){
-            fw.write(String.format("%s  %s  %s\n", p.getNome(), p.getNumero(), p.getDataNascimento()));
+    public void writeFw(ListaPessoas lp, FileWriter fw) {
+        try {
+            fw.write("vCard\n");
+            for (Pessoa p : lp) {
+                fw.write(String.format("%s  %s  %s\n", p.getNome(), p.getNumero(), p.getDataNascimento()));
+            }
+            fw.close();
+        }catch (IOException ioe){
+            ioe.printStackTrace();
         }
-        fw.close();
     }
 }

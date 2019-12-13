@@ -4,8 +4,8 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class ParserNokia{
-    public static ListaPessoas parseScanner(Scanner k) {
+public class Nokia implements Parser{
+    public ListaPessoas parseScanner(Scanner k) {
         ListaPessoas result = new ListaPessoas();
         while(k.hasNextLine()){
             String nome = k.nextLine();
@@ -16,12 +16,17 @@ public class ParserNokia{
         return result;
     }
 
-    public static void writeFw(ListaPessoas lp, FileWriter fw) throws IOException {
+    public void writeFw(ListaPessoas lp, FileWriter fw) {
+        try {
+
         fw.write("Nokia\n");
         for(Pessoa p: lp){
             fw.write(String.format("%s\n%s\n%s\n", p.getNome(), p.getNumero(), p.getDataNascimento()));
         }
         fw.write("\n");
         fw.close();
+        }catch (IOException ioe){
+            ioe.printStackTrace();
+        }
     }
 }
