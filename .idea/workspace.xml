@@ -7,34 +7,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3ed145c9-1fc5-4089-9888-a63219ab307a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/aula12/problema1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/myUtilAula12/IPlugin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/myUtilAula12/Plugin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/myUtilAula12/Sena.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/myUtilAula5/Parser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/myUtilAula5/vCard.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Aula13/problema1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Aula13/problema2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Aula13/problema3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/myUtilAula13/Capital.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/myUtilAula13/Estado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/myUtilAula13/Localidade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/myUtilAula13/Pair.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/myUtilAula13/Pais.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/myUtilAula13/Provincia.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/myUtilAula13/Regiao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/texteGuiao13.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSVf1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CSVf1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSVf2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CSVf2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CSVf3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CSVf3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nokiaf1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Nokiaf1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nokiaf2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Nokiaf2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nokiaf3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Nokiaf3.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ementa" beforeDir="false" afterPath="$PROJECT_DIR$/ementa" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/f3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/f3.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/Programacao3/aula5/problema3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Programacao3/aula5/problema3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Programacao3/myUtilAula5/ParserCSV.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Programacao3/myUtilAula5/ParserNokia.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Programacao3/myUtilAula5/ParserVcard.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Programacao3/myUtilAula6/ListsProcess.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Programacao3/myUtilAula6/ListsProcess.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aula11/problema1c.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aula11/problema1c.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/aula5/problema3.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/aula5/problema3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/myUtilAula5/ParserCSV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myUtilAula5/CSVv.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/myUtilAula5/ParserNokia.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/myUtilAula5/Nokia.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/myUtilAula5/ParserVcard.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vCardf1.txt" beforeDir="false" afterPath="$PROJECT_DIR$/vCardf1.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vCardf2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/vCardf2.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vCardf3.txt" beforeDir="false" afterPath="$PROJECT_DIR$/vCardf3.txt" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -48,67 +35,62 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Aula13/problema2.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="32">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/aula5/problema3.java">
+        <entry file="file://$PROJECT_DIR$/src/Aula13/problema3.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="36" column="57" selection-start-line="36" selection-start-column="57" selection-end-line="36" selection-end-column="57" />
+            <state relative-caret-position="334">
+              <caret line="32" column="47" selection-start-line="32" selection-start-column="47" selection-end-line="32" selection-end-column="47" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/myUtilAula5/Nokia.java">
+        <entry file="file://$PROJECT_DIR$/src/myUtilAula13/Pair.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="6" column="37" selection-start-line="6" selection-start-column="37" selection-end-line="6" selection-end-column="37" />
+            <state relative-caret-position="266">
+              <caret line="53" column="62" selection-start-line="53" selection-start-column="62" selection-end-line="53" selection-end-column="62" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#126#127#0" expanded="true" />
+                <element signature="e#154#155#0" expanded="true" />
+                <element signature="e#182#183#0" expanded="true" />
+                <element signature="e#210#211#0" expanded="true" />
+                <element signature="e#927#928#0" expanded="true" />
+                <element signature="e#976#977#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plugins/myUtilAula5/Nokia.class">
+        <entry file="file://$PROJECT_DIR$/texteGuiao13.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="5" column="19" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="19" />
+            <state>
+              <caret column="13" selection-start-column="13" selection-end-column="13" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plugins/myUtilAula5/CSVv.class">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/plugins/myUtilAula5/vCard.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="13" selection-start-line="13" selection-end-line="14" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Nokiaf3.txt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/f2.txt">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/f1.txt">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/f3.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="4" selection-start-column="4" selection-end-column="4" />
+            <state relative-caret-position="68">
+              <caret line="4" column="41" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -119,8 +101,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -169,18 +151,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/myUtilAula7/Bitmap.java" />
-        <option value="$PROJECT_DIR$/src/myUtilAula7/BitmapFileHeader.java" />
-        <option value="$PROJECT_DIR$/src/aula8/problema2.java" />
-        <option value="$PROJECT_DIR$/src/myUtilAula8/Question.java" />
-        <option value="$PROJECT_DIR$/quiz.txt" />
-        <option value="$PROJECT_DIR$/src/aula8/problema3.java" />
-        <option value="$PROJECT_DIR$/src/Aula9/problema1.java" />
-        <option value="$PROJECT_DIR$/src/myUtilAula9/ScannerAbeirense.java" />
-        <option value="$PROJECT_DIR$/src/myUtilAula9/Copo.java" />
-        <option value="$PROJECT_DIR$/src/myUtilAula9/GeladoDecorator.java" />
-        <option value="$PROJECT_DIR$/src/myUtilAula9/GeladoSimples.java" />
-        <option value="$PROJECT_DIR$/src/myUtilAula9/Gelado.java" />
         <option value="$PROJECT_DIR$/src/myUtilAula9/Cone.java" />
         <option value="$PROJECT_DIR$/src/Aula9/problema2.java" />
         <option value="$PROJECT_DIR$/src/myUtilAula9/Topping.java" />
@@ -218,8 +188,20 @@
         <option value="$PROJECT_DIR$/src/myUtilAula5/Nokia.java" />
         <option value="$PROJECT_DIR$/src/myUtilAula5/CSV.java" />
         <option value="$PROJECT_DIR$/src/myUtilAula5/CSVv.java" />
-        <option value="$PROJECT_DIR$/f3.txt" />
         <option value="$PROJECT_DIR$/src/aula5/problema3.java" />
+        <option value="$PROJECT_DIR$/src/myUtilAula13/Regiao.java" />
+        <option value="$PROJECT_DIR$/src/myUtilAula13/Localidade.java" />
+        <option value="$PROJECT_DIR$/src/myUtilAula13/Provincia.java" />
+        <option value="$PROJECT_DIR$/src/myUtilAula13/Capital.java" />
+        <option value="$PROJECT_DIR$/src/myUtilAula13/Pais.java" />
+        <option value="$PROJECT_DIR$/src/myUtilAula13/Estado.java" />
+        <option value="$PROJECT_DIR$/src/Aula13/problema1.java" />
+        <option value="$PROJECT_DIR$/f3.txt" />
+        <option value="$PROJECT_DIR$/texteGuiao13" />
+        <option value="$PROJECT_DIR$/texteGuiao13.txt" />
+        <option value="$PROJECT_DIR$/src/myUtilAula13/Pair.java" />
+        <option value="$PROJECT_DIR$/src/Aula13/problema2.java" />
+        <option value="$PROJECT_DIR$/src/Aula13/problema3.java" />
       </list>
     </option>
   </component>
@@ -237,7 +219,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -248,19 +229,26 @@
             <path>
               <item name="Programacao-3" type="b2602c69:ProjectViewProjectNode" />
               <item name="Programacao-3" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Programacao-3" type="b2602c69:ProjectViewProjectNode" />
               <item name="Programacao-3" type="462c0819:PsiDirectoryNode" />
-              <item name="plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="myUtilAula5" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Aula13" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Programacao-3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Programacao-3" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="myUtilAula13" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -273,11 +261,12 @@
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\dev\Programacao-3\plugins" />
-      <recent name="D:\dev\Programacao-3\myUtilAula5" />
-      <recent name="C:\Users\Andre Patacas\IdeaProjects\Programacao3" />
-      <recent name="C:\Users\Andre Patacas\IdeaProjects\Programacao3\out\production\Programacao3" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="myUtilAula13" />
+      <recent name="myUtilAula9" />
+      <recent name="myUtilAula6" />
+      <recent name="myUtilAula4" />
+      <recent name="myUtilAula2" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Andre Patacas\IdeaProjects\Programacao3" />
@@ -286,11 +275,11 @@
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="myUtilAula2" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="myUtilAula9" />
-      <recent name="myUtilAula6" />
-      <recent name="myUtilAula4" />
-      <recent name="myUtilAula2" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\dev\Programacao-3\plugins" />
+      <recent name="D:\dev\Programacao-3\myUtilAula5" />
+      <recent name="C:\Users\Andre Patacas\IdeaProjects\Programacao3" />
+      <recent name="C:\Users\Andre Patacas\IdeaProjects\Programacao3\out\production\Programacao3" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -305,7 +294,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.problema3 (1)">
+  <component name="RunManager" selected="Application.problema3">
     <configuration name="Plugin" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="myUtilAula12.Plugin" />
       <module name="Programacao3" />
@@ -319,27 +308,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="problema1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="11.0.4" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="aula12.problema1" />
+    <configuration name="problema1 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Aula13.problema1" />
       <module name="Programacao3" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="aula12.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="problema1c" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="aula11.problema1c" />
-      <module name="Programacao3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="aula11.*" />
+          <option name="PATTERN" value="Aula13.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -348,11 +322,11 @@
       </method>
     </configuration>
     <configuration name="problema2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="aula8.problema2" />
+      <option name="MAIN_CLASS_NAME" value="Aula13.problema2" />
       <module name="Programacao3" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="aula8.*" />
+          <option name="PATTERN" value="Aula13.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -374,11 +348,11 @@
       </method>
     </configuration>
     <configuration name="problema3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="aula11.problema3" />
+      <option name="MAIN_CLASS_NAME" value="Aula13.problema3" />
       <module name="Programacao3" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="aula11.*" />
+          <option name="PATTERN" value="Aula13.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -388,19 +362,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.Plugin" />
-      <item itemvalue="Application.problema1" />
-      <item itemvalue="Application.problema1c" />
-      <item itemvalue="Application.problema2" />
       <item itemvalue="Application.problema3 (1)" />
+      <item itemvalue="Application.problema1 (1)" />
+      <item itemvalue="Application.problema2" />
       <item itemvalue="Application.problema3" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.problema3" />
+        <item itemvalue="Application.problema2" />
+        <item itemvalue="Application.problema1 (1)" />
         <item itemvalue="Application.problema3 (1)" />
         <item itemvalue="Application.Plugin" />
-        <item itemvalue="Application.problema1" />
-        <item itemvalue="Application.problema1c" />
-        <item itemvalue="Application.problema3" />
       </list>
     </recent_temporary>
   </component>
@@ -436,13 +409,21 @@
       <option name="project" value="LOCAL" />
       <updated>1575454653089</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Guiao Aula 11">
+      <created>1576258018397</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1576258018397</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="878" extended-state="7" />
+    <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22214764" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22550336" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -450,7 +431,7 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3297587" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.347185" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3994638" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -526,111 +507,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/myUtilAula9/BFIterator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="22" lean-forward="true" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/myUtilAula10/BinarySearchTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2346">
-          <caret line="148" selection-start-line="148" selection-end-line="148" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#827#828#0" expanded="true" />
-            <element signature="e#862#863#0" expanded="true" />
-            <element signature="e#3455#3456#0" expanded="true" />
-            <element signature="e#3511#3512#0" expanded="true" />
-            <element signature="e#3548#3549#0" expanded="true" />
-            <element signature="e#3585#3586#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/lang/Integer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1394">
-          <caret line="112" column="12" selection-start-line="112" selection-start-column="12" selection-end-line="112" selection-end-column="12" />
-          <folding>
-            <element signature="e#42078#42079#0" expanded="true" />
-            <element signature="e#42112#42113#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/myUtilAula10/Mutable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Aula10/problema2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="23" column="20" selection-start-line="23" selection-start-column="20" selection-end-line="23" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/EstudarP3/MainFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="83">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Aula10/problema1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="31" column="41" selection-end-line="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/myUtilAula10/Util.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ementa">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Infopublico.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="514">
-          <caret line="89" column="3" selection-start-line="89" selection-start-column="3" selection-end-line="89" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/aula11/problema1.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="542">
-          <caret line="47" selection-start-line="47" selection-end-line="47" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#485#493#0" expanded="true" />
-            <element signature="e#769#777#0" expanded="true" />
-            <element signature="e#1028#1036#0" expanded="true" />
-            <element signature="e#1469#1480#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/aula11/problema1b.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="79">
@@ -666,13 +542,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/util/ArrayList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="495" column="19" selection-start-line="495" selection-start-column="19" selection-end-line="495" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/util/ArrayList.java" />
     <entry file="file://$PROJECT_DIR$/src/myUtilAula6/Ementa.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
@@ -755,13 +625,7 @@
     <entry file="file://$PROJECT_DIR$/plugins/Sena.class">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/lang/Class.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1079">
-          <caret line="401" column="35" selection-start-line="401" selection-start-column="35" selection-end-line="401" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/lang/Class.java" />
     <entry file="file://$PROJECT_DIR$/src/aula11/problema1c.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -853,20 +717,7 @@
     <entry file="file://$PROJECT_DIR$/Nokiaf2.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/net/URLClassLoader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="470" column="18" selection-start-line="470" selection-start-column="18" selection-end-line="470" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/aula5/problema3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="36" column="57" selection-start-line="36" selection-start-column="57" selection-end-line="36" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-11.0.2/lib/src.zip!/java.base/java/net/URLClassLoader.java" />
     <entry file="file://$PROJECT_DIR$/src/myUtilAula5/Nokia.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -894,16 +745,159 @@
     <entry file="file://$PROJECT_DIR$/Nokiaf3.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/f2.txt">
+    <entry file="file://$PROJECT_DIR$/f1.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/f1.txt">
+    <entry file="file://$PROJECT_DIR$/src/aula5/problema3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="7" lean-forward="true" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/myUtilAula13/Regiao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="40" column="18" selection-start-line="40" selection-start-column="18" selection-end-line="40" selection-end-column="18" />
+          <folding>
+            <element signature="e#188#189#0" expanded="true" />
+            <element signature="e#215#216#0" expanded="true" />
+            <element signature="e#248#249#0" expanded="true" />
+            <element signature="e#280#281#0" expanded="true" />
+            <element signature="e#764#765#0" expanded="true" />
+            <element signature="e#816#817#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/myUtilAula13/Localidade.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="23" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="23" />
+          <folding>
+            <element signature="e#134#135#0" expanded="true" />
+            <element signature="e#161#162#0" expanded="true" />
+            <element signature="e#607#608#0" expanded="true" />
+            <element signature="e#648#649#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/myUtilAula13/Estado.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="62" selection-start-line="7" selection-start-column="62" selection-end-line="7" selection-end-column="62" />
+          <folding>
+            <element signature="e#132#133#0" expanded="true" />
+            <element signature="e#162#163#0" expanded="true" />
+            <element signature="e#791#792#0" expanded="true" />
+            <element signature="e#835#836#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/myUtilAula13/Capital.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="54" selection-start-line="5" selection-start-column="54" selection-end-line="5" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/myUtilAula13/Pais.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="145">
+          <caret line="17" column="36" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#184#185#0" expanded="true" />
+            <element signature="e#211#212#0" expanded="true" />
+            <element signature="e#249#250#0" expanded="true" />
+            <element signature="e#279#280#0" expanded="true" />
+            <element signature="e#319#320#0" expanded="true" />
+            <element signature="e#349#350#0" expanded="true" />
+            <element signature="e#942#943#0" expanded="true" />
+            <element signature="e#1001#1002#0" expanded="true" />
+            <element signature="e#1362#1363#0" expanded="true" />
+            <element signature="e#1390#1391#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Aula13/problema1.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="20" column="41" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1143#1149#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/myUtilAula13/Provincia.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="493">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="e#653#654#0" expanded="true" />
+            <element signature="e#700#701#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/f2.txt">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/f3.txt">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="41" selection-start-line="4" selection-start-column="41" selection-end-line="4" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/texteGuiao13.txt">
+      <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="4" selection-start-column="4" selection-end-column="4" />
+          <caret column="13" selection-start-column="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/myUtilAula13/Pair.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="53" column="62" selection-start-line="53" selection-start-column="62" selection-end-line="53" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#126#127#0" expanded="true" />
+            <element signature="e#154#155#0" expanded="true" />
+            <element signature="e#182#183#0" expanded="true" />
+            <element signature="e#210#211#0" expanded="true" />
+            <element signature="e#927#928#0" expanded="true" />
+            <element signature="e#976#977#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Aula13/problema2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Aula13/problema3.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="32" column="47" selection-start-line="32" selection-start-column="47" selection-end-line="32" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
