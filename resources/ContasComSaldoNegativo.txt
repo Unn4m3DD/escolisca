@@ -1,0 +1,1 @@
+[Online] N: 3, Cliente: José Bento, Saldo: -400.0, Movimentos: [Credito > [amount=1400.0, data=20191231], Debito > [amount=-2000.0, data=20200102], Credito > [amount=1000.0, data=20200106], Credito > [amount=1200.0, data=20200107], Debito > [amount=-2000.0, data=20200111]]
