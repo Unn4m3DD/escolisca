@@ -97,15 +97,7 @@ public class P3_19 {
 
         // Adicione a seguir o código necessário para escrever para ficheiro o saldo total das contas eletrónicas (usar java streams)
         System.out.println("\n----- Saldo total das contas eletrónicas -----");
-        double saldoTotalOnline = b.getContas().stream().filter(e -> {
-            try {
-                var eletronica = (Eletronica) e; // atribuição apenas porque "(Eletronica) e" não é um statement
-                return true;
-            } catch (ClassCastException exp) {
-                return false;
-            }
-
-        }).map(Conta::getSaldo).reduce(0.0, Double::sum);
+        double saldoTotalOnline = b.getContas().stream().filter(e -> e instanceof Eletronica).map(Conta::getSaldo).reduce(0.0, Double::sum);
         System.out.println(saldoTotalOnline);
 
         try (FileWriter fw = new FileWriter(new File("resources/saldoTotalOnline.txt"))) {
