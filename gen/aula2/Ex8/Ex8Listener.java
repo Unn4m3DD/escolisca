@@ -72,18 +72,6 @@ public interface Ex8Listener extends ParseTreeListener {
 	 */
 	void exitFracDenNum(Ex8Parser.FracDenNumContext ctx);
 	/**
-	 * Enter a parse tree produced by the {@code ExprAssignement}
-	 * labeled alternative in {@link Ex8Parser#expr}.
-	 * @param ctx the parse tree
-	 */
-	void enterExprAssignement(Ex8Parser.ExprAssignementContext ctx);
-	/**
-	 * Exit a parse tree produced by the {@code ExprAssignement}
-	 * labeled alternative in {@link Ex8Parser#expr}.
-	 * @param ctx the parse tree
-	 */
-	void exitExprAssignement(Ex8Parser.ExprAssignementContext ctx);
-	/**
 	 * Enter a parse tree produced by the {@code ExprPrecedence2}
 	 * labeled alternative in {@link Ex8Parser#expr}.
 	 * @param ctx the parse tree
@@ -131,6 +119,18 @@ public interface Ex8Listener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitExprParenthesis(Ex8Parser.ExprParenthesisContext ctx);
+	/**
+	 * Enter a parse tree produced by the {@code ExprAssignment}
+	 * labeled alternative in {@link Ex8Parser#expr}.
+	 * @param ctx the parse tree
+	 */
+	void enterExprAssignment(Ex8Parser.ExprAssignmentContext ctx);
+	/**
+	 * Exit a parse tree produced by the {@code ExprAssignment}
+	 * labeled alternative in {@link Ex8Parser#expr}.
+	 * @param ctx the parse tree
+	 */
+	void exitExprAssignment(Ex8Parser.ExprAssignmentContext ctx);
 	/**
 	 * Enter a parse tree produced by the {@code ExprID}
 	 * labeled alternative in {@link Ex8Parser#expr}.

@@ -88,18 +88,6 @@ public class Ex8BaseListener implements Ex8Listener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
-	@Override public void enterExprAssignement(Ex8Parser.ExprAssignementContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitExprAssignement(Ex8Parser.ExprAssignementContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
 	@Override public void enterExprPrecedence2(Ex8Parser.ExprPrecedence2Context ctx) { }
 	/**
 	 * {@inheritDoc}
@@ -143,6 +131,18 @@ public class Ex8BaseListener implements Ex8Listener {
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitExprParenthesis(Ex8Parser.ExprParenthesisContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterExprAssignment(Ex8Parser.ExprAssignmentContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitExprAssignment(Ex8Parser.ExprAssignmentContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *

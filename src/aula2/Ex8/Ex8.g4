@@ -10,7 +10,7 @@ print: 'print' expr;
 expr: unaryOP=op2 expr #ExprUnary
     | e1=expr op1 e2=expr #ExprPrecedence1
     | e1=expr op2 e2=expr #ExprPrecedence2
-    | 'read' '"' prompt=.* '"' #ExprAssignement
+    | 'read' '"' prompt=.* '"' #ExprAssignment
     | ID #ExprID
     | Number #FracNumber
     | '(' expr ')' #ExprParenthesis

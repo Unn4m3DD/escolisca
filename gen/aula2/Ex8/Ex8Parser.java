@@ -373,23 +373,6 @@ public class Ex8Parser extends Parser {
 			else return visitor.visitChildren(this);
 		}
 	}
-	public static class ExprAssignementContext extends ExprContext {
-		public Token prompt;
-		public ExprAssignementContext(ExprContext ctx) { copyFrom(ctx); }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof Ex8Listener ) ((Ex8Listener)listener).enterExprAssignement(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof Ex8Listener ) ((Ex8Listener)listener).exitExprAssignement(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof Ex8Visitor ) return ((Ex8Visitor<? extends T>)visitor).visitExprAssignement(this);
-			else return visitor.visitChildren(this);
-		}
-	}
 	public static class ExprPrecedence2Context extends ExprContext {
 		public ExprContext e1;
 		public ExprContext e2;
@@ -486,6 +469,23 @@ public class Ex8Parser extends Parser {
 			else return visitor.visitChildren(this);
 		}
 	}
+	public static class ExprAssignmentContext extends ExprContext {
+		public Token prompt;
+		public ExprAssignmentContext(ExprContext ctx) { copyFrom(ctx); }
+		@Override
+		public void enterRule(ParseTreeListener listener) {
+			if ( listener instanceof Ex8Listener ) ((Ex8Listener)listener).enterExprAssignment(this);
+		}
+		@Override
+		public void exitRule(ParseTreeListener listener) {
+			if ( listener instanceof Ex8Listener ) ((Ex8Listener)listener).exitExprAssignment(this);
+		}
+		@Override
+		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
+			if ( visitor instanceof Ex8Visitor ) return ((Ex8Visitor<? extends T>)visitor).visitExprAssignment(this);
+			else return visitor.visitChildren(this);
+		}
+	}
 	public static class ExprIDContext extends ExprContext {
 		public TerminalNode ID() { return getToken(Ex8Parser.ID, 0); }
 		public ExprIDContext(ExprContext ctx) { copyFrom(ctx); }
@@ -556,7 +556,7 @@ public class Ex8Parser extends Parser {
 				break;
 			case 2:
 				{
-				_localctx = new ExprAssignementContext(_localctx);
+				_localctx = new ExprAssignmentContext(_localctx);
 				_ctx = _localctx;
 				_prevctx = _localctx;
 				setState(39);
@@ -571,7 +571,7 @@ public class Ex8Parser extends Parser {
 						{
 						{
 						setState(41);
-						((ExprAssignementContext)_localctx).prompt = matchWildcard();
+						((ExprAssignmentContext)_localctx).prompt = matchWildcard();
 						}
 						} 
 					}

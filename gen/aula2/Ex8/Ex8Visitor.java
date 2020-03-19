@@ -49,13 +49,6 @@ public interface Ex8Visitor<T> extends ParseTreeVisitor<T> {
 	 */
 	T visitFracDenNum(Ex8Parser.FracDenNumContext ctx);
 	/**
-	 * Visit a parse tree produced by the {@code ExprAssignement}
-	 * labeled alternative in {@link Ex8Parser#expr}.
-	 * @param ctx the parse tree
-	 * @return the visitor result
-	 */
-	T visitExprAssignement(Ex8Parser.ExprAssignementContext ctx);
-	/**
 	 * Visit a parse tree produced by the {@code ExprPrecedence2}
 	 * labeled alternative in {@link Ex8Parser#expr}.
 	 * @param ctx the parse tree
@@ -83,6 +76,13 @@ public interface Ex8Visitor<T> extends ParseTreeVisitor<T> {
 	 * @return the visitor result
 	 */
 	T visitExprParenthesis(Ex8Parser.ExprParenthesisContext ctx);
+	/**
+	 * Visit a parse tree produced by the {@code ExprAssignment}
+	 * labeled alternative in {@link Ex8Parser#expr}.
+	 * @param ctx the parse tree
+	 * @return the visitor result
+	 */
+	T visitExprAssignment(Ex8Parser.ExprAssignmentContext ctx);
 	/**
 	 * Visit a parse tree produced by the {@code ExprID}
 	 * labeled alternative in {@link Ex8Parser#expr}.

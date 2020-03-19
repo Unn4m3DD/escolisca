@@ -5,7 +5,6 @@ import java.util.HashMap;
 import java.util.Scanner;
 
 public class Ex8MyVisitor extends Ex8BaseVisitor<Object> {
-    // TODO: 09/03/2020 aceitar input do user
     class Fraction {
         private int gdc(int n1, int n2) {
             if (n2 == 0) {
@@ -73,7 +72,7 @@ public class Ex8MyVisitor extends Ex8BaseVisitor<Object> {
     }
 
     @Override
-    public Object visitExprAssignement(Ex8Parser.ExprAssignementContext ctx) {
+    public Object visitExprAssignment(Ex8Parser.ExprAssignmentContext ctx) {
         System.out.println(ctx.prompt.getText());
         Fraction fraction = fractionFromString(k.nextLine());
         return fraction;
