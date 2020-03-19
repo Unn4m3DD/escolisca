@@ -9,8 +9,7 @@ opts: text=Sentence ':' points=INTEGER ';';
 ID: [a-zA-Z]+[0-9]*;
 
 
-Sentence: '"' (~'"' | '\\"')*  '"' ;
-
+Sentence: '"' ('\\"'| '\\\\' | ~'"')*?  '"' ;
 
 INTEGER: [0-9]+;
 

@@ -7,7 +7,7 @@ import org.antlr.v4.runtime.tree.ParseTree;
 
 import java.io.IOException;
 
-public class Main {
+public class Ex10d {
     public static void main(String[] args) throws IOException {
         CharStream cs = CharStreams.fromFileName(args[0]);
         Ex10dLexer lexer = new Ex10dLexer(cs);

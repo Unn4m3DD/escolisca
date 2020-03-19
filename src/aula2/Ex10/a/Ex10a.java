@@ -5,7 +5,7 @@ import org.antlr.v4.runtime.*;
 
 import java.io.IOException;
 
-public class Main {
+public class Ex10a {
     public static void main(String[] args) throws IOException {
         CharStream cs = CharStreams.fromFileName(args[0]);
         Ex10aLexer lexer = new Ex10aLexer(cs);
