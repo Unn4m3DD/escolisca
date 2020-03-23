@@ -1,2 +1,2 @@
 # AlgC
-Resolução do teste final de Algoritmos e Complexidade
+Resolução dos guiões de Algoritmos e Complexidade
