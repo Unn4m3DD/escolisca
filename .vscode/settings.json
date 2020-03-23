@@ -1,0 +1,12 @@
+{
+  "files.associations": {
+    "*.html": "html",
+    "*.pl": "prolog",
+    "*.bdl": "bdl",
+    "stdio.h": "c",
+    "timeb.h": "c",
+    "cmath": "c",
+    "stdlib.h": "c"
+  },
+  "python.pythonPath": "/usr/bin/python3"
+}
