@@ -6,7 +6,8 @@
     "stdio.h": "c",
     "timeb.h": "c",
     "cmath": "c",
-    "stdlib.h": "c"
+    "stdlib.h": "c",
+    "assert.h": "c"
   },
   "python.pythonPath": "/usr/bin/python3"
 }

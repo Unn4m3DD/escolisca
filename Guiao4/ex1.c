@@ -1,6 +1,8 @@
+#include <assert.h>
 #include <stdio.h>
 int sub_count = 0;
 int test_array(int* array, int size) {
+  assert(size > 1);
   for (int i = 1; i < size; i++) {
     sub_count++;
     if (array[i] - array[i - 1] != 1) return 0;
