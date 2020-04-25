@@ -1,0 +1,23 @@
+#pragma once
+typedef struct _linked_list LinkedList;
+LinkedList* list_instanteate();
+int list_add(LinkedList* list, void* elem);
+int list_insert(LinkedList* list, int index, void* elem);
+int list_add_first(LinkedList* list, void* elem);
+int list_clear(LinkedList* list);
+LinkedList* list_clone(LinkedList* list);
+int list_contains(LinkedList* list, void* elem);
+void* list_get(LinkedList* list, int index);
+void* list_get_first(LinkedList* list);
+void* list_get_last(LinkedList* list);
+int list_index_of(LinkedList* list, void* elem);
+int list_last_index_of(LinkedList* list, void* elem);
+void list_push(LinkedList* list, void* elem);
+void* list_remove_index(LinkedList* list, int index);
+int list_remove_item(LinkedList* list, void* elem);
+void* list_remove_first(LinkedList* list);
+int list_remove_firstOccurrence(LinkedList* list, void* elem);
+void* list_remove_last(LinkedList* list);
+int list_remove_last_occurrence(LinkedList* list, void* elem);
+int list_size(LinkedList* list);
+void list_print_int(LinkedList* list);
