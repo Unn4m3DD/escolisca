@@ -12,6 +12,7 @@ struct _linked_list {
   Node* last;
   int size;
 };
+
 LinkedList* list_instanteate() {
   LinkedList* list = (LinkedList*)malloc(sizeof(LinkedList));
   list->first = NULL;
@@ -19,6 +20,7 @@ LinkedList* list_instanteate() {
   list->size = 0;
   return list;
 }
+
 int list_destroy(LinkedList** list) {
   for (Node* node = (*list)->first; node != NULL;) {
     Node* new_node = node->next;
@@ -34,8 +36,13 @@ int list_add(LinkedList* list, void* elem) {
   Node* new_node = (Node*)malloc(sizeof(Node));
   new_node->content = elem;
   list->size++;
-  list->last->next = new_node;
+  if (list->size == 1) {
+    list->first = new_node;
+  } else {
+    list->last->next = new_node;
+  }
   list->last = new_node;
+
   return 1;
 }
 
@@ -51,24 +58,32 @@ int list_insert(LinkedList* list, int index, void* elem) {
   new_node->next = prev_node->next;
   prev_node->next = new_node;
   list->size++;
+  if (list->size == 1) list->first = new_node;
   return 1;
 }
+
 int list_add_first(LinkedList* list, void* elem) {
   Node* new_node = (Node*)malloc(sizeof(Node*));
   new_node->next = list->first;
+  new_node->content = elem;
   list->first = new_node;
   list->size++;
+  if (list->size == 1) list->first = new_node;
   return 1;
 }
+
 int list_clear(LinkedList* list) {
   for (Node* node = list->first; node != NULL;) {
     Node* new_node = node->next;
     free(node);
     node = new_node;
   }
+  list->first = NULL;
+  list->last = NULL;
   list->size = 0;
   return 1;
 }
+
 LinkedList* list_clone(LinkedList* list) {
   LinkedList* new_list = list_instanteate();
   for (Node* node = list->first; node != NULL; node = node->next) {
@@ -85,6 +100,7 @@ int list_contains(LinkedList* list, void* elem) {
   }
   return 0;
 }
+
 void* list_get(LinkedList* list, int index) {
   Node* node = list->first;
   for (int i = 0; i < index; i++) {
@@ -92,6 +108,7 @@ void* list_get(LinkedList* list, int index) {
   }
   return node->content;
 }
+
 void* list_get_first(LinkedList* list) { return list_get(list, 0); }
 
 void* list_get_last(LinkedList* list) { return list_get(list, list->size); }
@@ -104,6 +121,7 @@ int list_index_of(LinkedList* list, void* elem) {
   }
   return -1;
 }
+
 int list_last_index_of(LinkedList* list, void* elem) {
   int result = -1;
   Node* node = list->first;
@@ -113,6 +131,7 @@ int list_last_index_of(LinkedList* list, void* elem) {
   }
   return result;
 }
+
 void* list_remove_index(LinkedList* list, int index) {
   if (index == 0) return list_remove_first(list);
   Node* prev_node = list->first;
@@ -123,9 +142,11 @@ void* list_remove_index(LinkedList* list, int index) {
   void* result = to_free_ptr->content;
   prev_node->next = to_free_ptr->next;
   free(to_free_ptr);
+  if (prev_node->next == NULL) list->last = prev_node;
   list->size--;
   return result;
 }
+
 int list_remove_item(LinkedList* list, void* elem) {
   Node* prev_node;
   for (prev_node = list->first; prev_node->next != NULL;
@@ -136,16 +157,21 @@ int list_remove_item(LinkedList* list, void* elem) {
   Node* to_free_ptr = prev_node->next;
   prev_node->next = to_free_ptr->next;
   free(to_free_ptr);
+  if (prev_node->next == NULL) list->last = prev_node;
   list->size--;
+  if (list->size == 1) list->first = prev_node;
   return 1;
 }
+
 void* list_remove_first(LinkedList* list) {
   void* result = list->first->content;
-  free(list->first);
+  Node* to_free_ptr = list->first;
   list->first = list->first->next;
+  free(to_free_ptr);
   list->size--;
   return result;
 }
+
 int list_remove_last_item(LinkedList* list, void* elem) {
   Node* target_node;
   for (Node* prev_node = list->first; prev_node->next != NULL;
@@ -156,16 +182,25 @@ int list_remove_last_item(LinkedList* list, void* elem) {
   Node* to_free_ptr = target_node->next;
   target_node->next = to_free_ptr->next;
   free(to_free_ptr);
+  if (target_node->next == NULL) list->last = target_node;
   list->size--;
+  if (list->size == 1) list->first = target_node;
   return 1;
 }
+
 void* list_remove_last(LinkedList* list) {
   return list_remove_index(list, list->size - 1);
 }
+
 int list_size(LinkedList* list) { return list->size; }
-void list_print_int(LinkedList* list) {
-  printf("%ld", (long)list->first->content);
-  for (Node* node = list->first; node != NULL; node = node->next) {
-    printf(" -> %ld", (long)node->content);
+
+void list_print_int(LinkedList* list, char* (*to_string)(void*)) {
+  char* item_string = to_string(list->first->content);
+  printf(item_string);
+  free(item_string);
+  for (Node* node = list->first->next; node != NULL; node = node->next) {
+    item_string = to_string(node->content);
+    printf(" -> %s", item_string);
+    free(item_string);
   }
 }
