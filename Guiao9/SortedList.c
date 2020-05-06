@@ -122,7 +122,7 @@ void ListMoveToTail(List* l) { ListMove(l, l->size - 1); }
 
 int ListSearch(List* l, const void* p) {
   int counter = 0;
-  _ListNode* node = l->head;
+  struct _ListNode* node = l->head;
 
   int comp = l->compare(l->current->item, p);
   if (comp <= 0) {
@@ -151,7 +151,6 @@ int ListInsert(List* l, void* p) {
   sn->item = p;
   sn->next = NULL;
 
-  //
   if (l->size == 0) {
     l->head = l->tail = sn;
     l->size = 1;
@@ -235,7 +234,7 @@ void* ListRemoveCurrent(List* l) {
   else if (l->currentPos == l->size - 1)
     item = ListRemoveTail(l);
   else {
-    _ListNode* prev = l->head;
+    struct _ListNode* prev = l->head;
     for (int i = 0; i < l->currentPos - 1; i++) {
       prev = prev->next;
     }
