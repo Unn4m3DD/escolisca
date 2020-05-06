@@ -79,7 +79,6 @@ int SchedulingSequenceAdd(SchedulingSequence* ss, TimeInterval* ti) {
       return 0;
     }
     if (comp > 0) {
-      printf("i = %d, size = %d\n", i + 1, ss->size);
       shiftArray(ss->intervals, i + 1, ss->size);
       return 1;
     }

@@ -40,8 +40,6 @@ TimeInterval* TimeIntervalCreate(DateTime* t1, DateTime* t2, const char* id) {
     ti->end = t2;
     // Create a copy of the id string! Use malloc+strcpy or strdup.
     ti->id = strdup(id);
-    printf("asd2 %s\n",ti->id);
-
   }
   assert(invariant(ti));  // the invariant must be ensured here!
   return ti;
@@ -64,12 +62,11 @@ void TimeIntervalDestroy(TimeInterval** pti) {
 // NOTE: this does not establish a total order!
 // Result=0 does not imply that *ti1 and *ti2 are equal.
 int TimeIntervalCompare(TimeInterval* ti1, TimeInterval* ti2) {
-  if (DateTimeCompare(ti1->end, ti2->start) <= 0) {
-    return -1;
-  }
-  if (DateTimeCompare(ti1->start, ti2->end) >= 0) {
-    return 1;
-  }
+  if (DateTimeCompare(ti1->start, ti2->start) == 0 &&
+      DateTimeCompare(ti1->end, ti2->end) == 0)
+    return 0;
+  if (DateTimeCompare(ti1->end, ti2->start) <= 0) return -1;
+  if (DateTimeCompare(ti1->start, ti2->end) >= 0) return 1;
   return 0;
 }
 
