@@ -159,5 +159,8 @@ void GraphDijkstraShowPath(const GraphDijkstra* p, unsigned int v) {
 }
 
 void GraphDijkstraDisplay(const GraphDijkstra* p) {
-  printf("Não foi definida especificaçao do metodo");
+  int vertexCount = GraphGetNumVertices(p->graph);
+  for (int i = 0; i < vertexCount; i++) {
+    GraphDijkstraShowPath(p, i);
+  }
 }

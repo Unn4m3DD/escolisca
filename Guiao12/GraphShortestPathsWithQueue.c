@@ -132,5 +132,8 @@ void GraphShortestPathsWithQueueShowPath(const GraphShortestPathsWithQueue* p,
 }
 
 void GraphShortestPathsWithQueueDisplay(const GraphShortestPathsWithQueue* p) {
-  printf("Não foi definida especificaçao do metodo");
+  int vertexCount = GraphGetNumVertices(p->graph);
+  for (int i = 0; i < vertexCount; i++) {
+    GraphShortestPathsWithQueueShowPath(p, i);
+  }
 }

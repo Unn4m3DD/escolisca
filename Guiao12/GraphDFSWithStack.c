@@ -117,5 +117,8 @@ void GraphDFSWithStackShowPath(const GraphDFSWithStack* p, unsigned int v) {
 }
 
 void GraphDFSWithStackDisplay(const GraphDFSWithStack* p) {
-  printf("Não foi definida especificaçao do metodo");
+  int vertexCount = GraphGetNumVertices(p->graph);
+  for (int i = 0; i < vertexCount; i++) {
+    GraphDFSWithStackShowPath(p, i);
+  }
 }

@@ -135,5 +135,8 @@ void GraphDFSRecShowPath(const GraphDFSRec* p, unsigned int v) {
 }
 
 void GraphDFSRecDisplay(const GraphDFSRec* p) {
-  printf("Não foi definida especificaçao do metodo");
+  int vertexCount = GraphGetNumVertices(p->graph);
+  for (int i = 0; i < vertexCount; i++) {
+    GraphDFSRecShowPath(p, i);
+  }
 }

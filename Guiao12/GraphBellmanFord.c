@@ -54,7 +54,6 @@ GraphBellmanFord* GraphBellmanFordExecute(Graph* g, unsigned int startVertex) {
     }
   }
 
-
   return result;
 }
 
@@ -122,5 +121,8 @@ void GraphBellmanFordShowPath(const GraphBellmanFord* p, unsigned int v) {
 }
 
 void GraphBellmanFordDisplay(const GraphBellmanFord* p) {
-  printf("Não foi definida especificaçao do metodo");
+  int vertexCount = GraphGetNumVertices(p->graph);
+  for (int i = 0; i < vertexCount; i++) {
+    GraphBellmanFordShowPath(p, i);
+  }
 }

@@ -126,6 +126,8 @@ void GraphBFSWithQueueShowPath(const GraphBFSWithQueue* p, unsigned int v) {
 }
 
 void GraphBFSWithQueueDisplay(const GraphBFSWithQueue* p) {
-  printf("Não foi definida especificaçao do metodo");
-  
+  int vertexCount = GraphGetNumVertices(p->graph);
+  for (int i = 0; i < vertexCount; i++) {
+    GraphBFSWithQueueShowPath(p, i);
+  }
 }
