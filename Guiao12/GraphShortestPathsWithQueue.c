@@ -39,15 +39,20 @@ GraphShortestPathsWithQueue* GraphShortestPathsWithQueueExecute(
   result->startVertex = startVertex;
   result->distance = (int*)malloc(sizeof(int) * (numVertices));
   result->predecessor = (int*)malloc(sizeof(int) * (numVertices));
+  int contains[numVertices];
   for (int i = 0; i < numVertices; i++) {
     result->distance[i] = INT_MAX;
+    contains[i] = 0;
   }
+  contains[startVertex] = 1;
+
   result->distance[result->startVertex] = 0;
   Queue* q = QueueCreate(numVertices);
   QueueEnqueue(q, result->startVertex);
 
   while (!QueueIsEmpty(q)) {
     unsigned int currentVertex = QueueDequeue(q);
+    contains[currentVertex] = 0;
     unsigned int* neighbour = GraphGetAdjacentsTo(result->graph, currentVertex);
     int* neighbourDist = GraphGetDistancesToAdjacents(result->graph, currentVertex);
     for (int i = 1; i < neighbour[0] + 1; i++) {
@@ -55,7 +60,10 @@ GraphShortestPathsWithQueue* GraphShortestPathsWithQueueExecute(
       if (result->distance[nthNeighbour] > result->distance[currentVertex] + neighbourDist[i]) {
         result->distance[nthNeighbour] = result->distance[currentVertex] + neighbourDist[i];
         result->predecessor[nthNeighbour] = currentVertex;
-        QueueEnqueue(q, nthNeighbour);
+        if (!contains[nthNeighbour]) {
+          contains[nthNeighbour] = 1;
+          QueueEnqueue(q, nthNeighbour);
+        }
       }
     }
     free(neighbour);

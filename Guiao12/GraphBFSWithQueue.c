@@ -52,11 +52,18 @@ GraphBFSWithQueue* GraphBFSWithQueueExecute(Graph* g, unsigned int startVertex) 
   traversal->startVertex = startVertex;
 
   // EFETUAR A TRAVESSIA
+  int contains[numVertices];
+  for (int i = 0; i < numVertices; i++) {
+    contains[i] = 0;
+  }
+  contains[startVertex] = 1;
   int numVertex = GraphGetNumVertices(traversal->graph);
   Queue* queue = QueueCreate(numVertex > 10 ? numVertex : 10);
+
   QueueEnqueue(queue, startVertex);
   while (!QueueIsEmpty(queue)) {
     unsigned int currentVertex = QueueDequeue(queue);
+    contains[currentVertex] = 0;
     traversal->marked[currentVertex] = 1;
     unsigned int* adjVertex = GraphGetAdjacentsTo(traversal->graph, currentVertex);
     for (int i = 1; i <= adjVertex[0]; i++) {
@@ -64,7 +71,10 @@ GraphBFSWithQueue* GraphBFSWithQueueExecute(Graph* g, unsigned int startVertex) 
       if (!traversal->marked[vertex]) {
         traversal->distance[vertex] = traversal->distance[currentVertex] + 1;
         traversal->predecessor[vertex] = currentVertex;
-        QueueEnqueue(queue, vertex);
+        if (!contains[vertex]) {
+          contains[vertex] = 1;
+          QueueEnqueue(queue, vertex);
+        }
       }
     }
   }

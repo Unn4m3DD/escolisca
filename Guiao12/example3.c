@@ -11,19 +11,19 @@
 #include "GraphShortestPathsWithQueue.h"
 
 int main(void) {
-  FILE* f = fopen("./graphs/SWmediumG.txt", "r");
-  Graph* g01 = GraphFromFile(f);
-  fclose(f);
-  // GraphCreate(6, 0, 1);
+  //FILE* f = fopen("./graphs/SWmediumG.txt", "r");
+  // Graph* g01 = GraphFromFile(f);
+  // fclose(f);
+  Graph* g01 = GraphCreate(6, 0, 1);
 
-  //GraphAddWeightedEdge(g01, 0, 5, 1);
-  //GraphAddWeightedEdge(g01, 2, 4, 2);
-  //GraphAddWeightedEdge(g01, 2, 3, 3);
-  //GraphAddWeightedEdge(g01, 1, 2, 4);
-  //GraphAddWeightedEdge(g01, 0, 1, 5);
-  //GraphAddWeightedEdge(g01, 3, 4, 6);
-  //GraphAddWeightedEdge(g01, 3, 5, 1);
-  //GraphAddWeightedEdge(g01, 0, 2, 8);
+  GraphAddWeightedEdge(g01, 0, 5, 1);
+  GraphAddWeightedEdge(g01, 2, 4, 2);
+  GraphAddWeightedEdge(g01, 2, 3, 3);
+  GraphAddWeightedEdge(g01, 1, 2, 4);
+  GraphAddWeightedEdge(g01, 0, 1, 5);
+  GraphAddWeightedEdge(g01, 3, 4, 6);
+  GraphAddWeightedEdge(g01, 3, 5, 1);
+  GraphAddWeightedEdge(g01, 0, 2, 8);
 
   GraphDisplay(g01);
 
