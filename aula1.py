@@ -66,7 +66,8 @@ def remove_e_conta(lista, elem):
 
 #Exercicio 3.1
 def cabeca(lista):
-  pass
+  if(lista == []): return None
+  return lista[0]
 
 #Exercicio 3.2
 def cauda(lista):
