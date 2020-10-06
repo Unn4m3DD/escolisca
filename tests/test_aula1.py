@@ -79,7 +79,15 @@ def test_cabeca(mock_cabeca):
     assert mock_cabeca([]) == None
     assert mock_cabeca.call_count == 1
     assert mock_cabeca([1,2,3]) == 1
-    assert mock_cabeca.call_count == 1
+    assert mock_cabeca.call_count == 2
+
+#Exercicio 3.2
+@mock.patch('aula1.cauda', side_effect = aula1.cauda)
+def test_cauda(mock_cauda):
+    assert mock_cauda([]) == None
+    assert mock_cauda.call_count == 1
+    assert mock_cauda([1,2,3]) == 3
+    assert mock_cauda.call_count == 2
 
 #Exercicio 3.3
 @mock.patch('aula1.juntar', side_effect = aula1.juntar)
@@ -95,3 +103,12 @@ def test_menor(mock_menor):
     assert mock_menor([1,2,3,0,5]) == 0
     assert mock_menor.call_count == 6
     assert mock_menor([]) == None
+
+
+#Exercicio 3.5
+@mock.patch('aula1.max_min', side_effect = aula1.max_min)
+def test_max_min(mock_max_min):
+    assert mock_max_min([1,2,3,0,5]) == (5, 0)
+    assert mock_max_min.call_count == 6
+    assert mock_max_min([1,2,3,0,5, 100, -21]) == (100, -21)
+    assert mock_max_min.call_count == 14

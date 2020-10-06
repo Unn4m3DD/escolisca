@@ -71,7 +71,8 @@ def cabeca(lista):
 
 #Exercicio 3.2
 def cauda(lista):
-  pass
+  if(lista == []): return None
+  return lista[-1]
 
 #Exercicio 3.3
 def juntar(l1, l2):
@@ -88,4 +89,8 @@ def menor(lista):
 
 #Exercicio 3.6
 def max_min(lista):
-  pass
+  if lista == []: return None, None
+  maximum, minimum = max_min(lista[1:]) 
+  minimum = minimum if minimum != None else lista[0]
+  maximum = maximum if maximum != None else lista[0]
+  return lista[0] if lista[0] > maximum else maximum, lista[0] if lista[0] < minimum else minimum
