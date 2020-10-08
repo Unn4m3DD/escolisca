@@ -215,3 +215,9 @@ def med_e_avg(lista, size=None):
     return None, (lista[0] + lista[1]) / size
   med, avg = med_e_avg(lista[1:-1], size)
   return med, avg + (lista[0] + lista[-1]) / size
+
+
+""" Exercicio 4.1 """
+
+is_odd = lambda x : x % 2 == 0
+is_positive = lambda x : x > 0
