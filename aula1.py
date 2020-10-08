@@ -203,6 +203,9 @@ def menores_e_resto(lista):
   return m0, m1, res_lista
 
 
+""" Exercicio 3.8 """
+
+
 def med_e_avg(lista, size=None):
   if(size == None):
     size = len(lista)
@@ -212,5 +215,3 @@ def med_e_avg(lista, size=None):
     return None, (lista[0] + lista[1]) / size
   med, avg = med_e_avg(lista[1:-1], size)
   return med, avg + (lista[0] + lista[-1]) / size
-
-

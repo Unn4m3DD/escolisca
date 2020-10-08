@@ -208,6 +208,7 @@ def test_menores_e_resto(mock_menores_e_resto):
   assert mock_menores_e_resto.call_count == 2
 
 
+""" Exercicio 3.8 """
 
 
 @ mock.patch('aula1.med_e_avg', side_effect=aula1.med_e_avg)
