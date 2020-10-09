@@ -140,7 +140,7 @@ def cabeca(lista):
 def cauda(lista):
   if(lista == []):
     return None
-  return lista[-1]
+  return lista[1:]
 
 
 """ Exercicio 3.3 """

@@ -149,7 +149,7 @@ def test_cabeca(mock_cabeca):
 def test_cauda(mock_cauda):
   assert mock_cauda([]) is None
   assert mock_cauda.call_count == 1
-  assert mock_cauda([1, 2, 3]) == 3
+  assert mock_cauda([1, 2, 3]) == [2, 3]
   assert mock_cauda.call_count == 2
 
 
