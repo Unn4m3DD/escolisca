@@ -1,0 +1,44 @@
+Graphical Network Simulator 3 (GNS3)
+Graphical Network Simulator 3 (GNS3)
+
+Website - www.gns3.com
+
+Linux installation (recommended): Go to website, configure GNS3 ppa repository, and install.
+
+        PPA: https://launchpad.net/~gns3/+archive/ubuntu/ppa
+
+        Install package gns3-gui gns3-server vpcs.
+
+Windows installation: Download from website and install.
+
+Mac OS installation : Download from website and install. May require XQuartz (old versions).
+
+Device instalation procedure
+
+Go to  (Edit-Preferences) and:
+1. At (Preferences-General) verify/setup all storing and programs paths, avoiding paths with spaces and non ASCII caracters;
+2. At (Preferences-Server) enable local server, choose 127.0.0.1 as host binding address;
+3. At (Preferences-Dynamips-IOS routers” and create new router templates:
+    Router 7200 - recommended IOS image: 7200 with IOS 15.1(4) and network adapters C7200-IO-2FE+PA-2FE-TX (4 FastEthernet)
+    Router 3725 - recommended IOS image: 3725 with IOS 12.4(21) and adaptersGT96100-FE+NM-1FE-TX (2 FastEthernet)
+    Switch L3 (L2) - router 3725 with IOS iamge 12.4(21) and adaptersGT96100-FE+NM-16ESW (1 FastEthernet + 16 port switch module)
+        --- Choose option "This is an EtherSwitch router" --
+4. Click "Idle-PC finder" during template setup OR add router to project, start it, open console, choose option "auto idle-PC"
+        --- Verify that "dynamips" process uses only 5%-10% CPU per router. If not, choose option "idle-PC" and choose one of the listed register numbers (apply), until CPU usage goes down.
+        --- This must be done for each router template, NOT each router!
+
+Recommended router firmwares:
+
+Router 7200 Firmware 15.1(4) IOS Image - (Download 51.4MB) .Requires 512MB of RAM per router.
+
+Router 3725 Firmware 12.4(21) IOS Image - (Download 35.7MB) .Requires 256MB of RAM per router.
+
+Other router firmwares:
+
+Router 2600 Firmware 12.3(23) IOS Image - (Download 7.4MB). Requires only 64Mb of RAM per router but has no IPv6 features.
+
+Router 7200 Firmware 15.2(4) IOS Image - (Download 34.8MB) .Requires 512MB of RAM per router. Has problems with IPsec tunnels.
+
+Router 7200 Firmware 12.3(8T) IOS Image - (Download 65.9MB). Requires 512MB of RAM per router.
+
+Última alteração: Segunda, 16 de Setembro de 2019 às 15:42
