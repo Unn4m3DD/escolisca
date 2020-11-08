@@ -1,0 +1,10 @@
+Cisco Router Simulation Platform (version 0.2.21-amd64/Linux stable)
+Copyright (c) 2005-2011 Christophe Fillot.
+Build date: Oct 20 2020 10:45:56
+
+Log file: writing to dynamips_i6_log.txt
+Hypervisor TCP control server started (port 52279).
+Hypervisor: closing control sockets.
+Hypervisor: closing remote client connections.
+Shutdown in progress...
+Shutdown completed.
