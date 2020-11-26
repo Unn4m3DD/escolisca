@@ -1,0 +1,18 @@
+-- first command:
+{1,2,3}
+{4,5,6}
+-- set var A:
+A = {3,4,5}
+A \ {5}
+B = A + {0}
+A & B
+-- that's all folks!
+C = {a, b, c}
+--result : {a, b, c}
+{a, b, c} + {b, d}
+--result : {a, b, c, d}
+{a, b, c} & {b, d}
+--result : {b}
+{a, b, c} \ {b, d}
+--result : {a, c}
+C \ C
