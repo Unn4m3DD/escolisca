@@ -1,0 +1,1 @@
+Escolisca senas
