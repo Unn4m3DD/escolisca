@@ -1,0 +1,11 @@
+{
+  "files.associations": {
+    "*.html": "html",
+    "*.pl": "prolog",
+    "*.bdl": "bdl",
+    "timeinterval.h": "c",
+    "schedulingsequence.h": "c",
+    "type_traits": "c"
+  },
+  "C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: Google, IndentWidth: 2, DerivePointerAlignment: false, PointerAlignment: Left, ColumnLimit: 0}",
+}

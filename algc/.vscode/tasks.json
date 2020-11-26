@@ -1,0 +1,41 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "shell",
+      "label": "Compile and Run Folder",
+      "command": "build/`basename \\`pwd\\``.exe",
+      "dependsOn": [
+        "compileFolder",
+      ]
+    },
+    {
+      "type": "shell",
+      "label": "runFolder",
+      "command": "build/`basename \\`pwd\\``.exe",
+    },
+    {
+      "type": "shell",
+      "label": "compileFolder",
+      "command": "g++ -Wall -I ./${relativeFileDirname} ${relativeFileDirname}/*.c -o build/`basename \\`pwd\\``.exe;"
+    },
+    {
+      "type": "shell",
+      "label": "Compile and Run",
+      "command": "build/${fileBasenameNoExtension}.exe",
+      "dependsOn": [
+        "compile",
+      ]
+    },
+    {
+      "type": "shell",
+      "label": "run",
+      "command": "build/${fileBasenameNoExtension}.exe",
+    },
+    {
+      "type": "shell",
+      "label": "compile",
+      "command": "g++ -Wall ${relativeFileDirname}/${fileBasename} -o build/${fileBasenameNoExtension}.exe;"
+    }
+  ]
+}
