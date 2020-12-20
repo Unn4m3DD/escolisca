@@ -1,0 +1,10 @@
+{
+  "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+  "files.associations": {
+    "*.html": "html",
+    "*.pl": "prolog",
+    "*.bdl": "bdl",
+    "*.shader": "glsl",
+    "vector": "cpp"
+  }
+}

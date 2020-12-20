@@ -1,0 +1,9 @@
+# ninja log v5
+0	30	1608475288243848689	CMakeFiles/program03.dir/src/main.c.o	b0785bf8ccf1eac
+1	28	1608474498492515828	CMakeFiles/program03.dir/src/buffer.c.o	f30806267200df6c
+0	42	1608474473509226193	CMakeFiles/program03.dir/src/queue.c.o	3de0e32d7b398783
+0	33	1608475185444177495	CMakeFiles/program03.dir/src/server.c.o	1d635d6fab30f310
+0	35	1608475185447510817	CMakeFiles/program03.dir/src/client.c.o	1d24325a22ade9f1
+28	49	1608474498512515793	program03	6b859f320aa343b1
+0	30	1608475339270360658	CMakeFiles/program03.dir/src/main.c.o	b0785bf8ccf1eac
+30	54	1608475339293693922	program03	941930e925458cee

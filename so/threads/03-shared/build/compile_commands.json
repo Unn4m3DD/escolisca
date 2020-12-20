@@ -1,0 +1,27 @@
+[
+{
+  "directory": "/home/andre/repos/escolisca/so/threads/03-shared/build",
+  "command": "/opt/cuda/bin/gcc -I../program03 -I../include -g -o CMakeFiles/program03.dir/src/main.c.o -c /home/andre/repos/escolisca/so/threads/03-shared/src/main.c",
+  "file": "/home/andre/repos/escolisca/so/threads/03-shared/src/main.c"
+},
+{
+  "directory": "/home/andre/repos/escolisca/so/threads/03-shared/build",
+  "command": "/opt/cuda/bin/gcc -I../program03 -I../include -g -o CMakeFiles/program03.dir/src/queue.c.o -c /home/andre/repos/escolisca/so/threads/03-shared/src/queue.c",
+  "file": "/home/andre/repos/escolisca/so/threads/03-shared/src/queue.c"
+},
+{
+  "directory": "/home/andre/repos/escolisca/so/threads/03-shared/build",
+  "command": "/opt/cuda/bin/gcc -I../program03 -I../include -g -o CMakeFiles/program03.dir/src/buffer.c.o -c /home/andre/repos/escolisca/so/threads/03-shared/src/buffer.c",
+  "file": "/home/andre/repos/escolisca/so/threads/03-shared/src/buffer.c"
+},
+{
+  "directory": "/home/andre/repos/escolisca/so/threads/03-shared/build",
+  "command": "/opt/cuda/bin/gcc -I../program03 -I../include -g -o CMakeFiles/program03.dir/src/client.c.o -c /home/andre/repos/escolisca/so/threads/03-shared/src/client.c",
+  "file": "/home/andre/repos/escolisca/so/threads/03-shared/src/client.c"
+},
+{
+  "directory": "/home/andre/repos/escolisca/so/threads/03-shared/build",
+  "command": "/opt/cuda/bin/gcc -I../program03 -I../include -g -o CMakeFiles/program03.dir/src/server.c.o -c /home/andre/repos/escolisca/so/threads/03-shared/src/server.c",
+  "file": "/home/andre/repos/escolisca/so/threads/03-shared/src/server.c"
+}
+]
