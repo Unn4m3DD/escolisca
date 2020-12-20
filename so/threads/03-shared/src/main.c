@@ -18,6 +18,7 @@ int main() {
   for (int i = 0; i < BUFFER_COUNT; i++) {
     pthread_mutex_init(&buffer_pool[i].lock, NULL);
     pthread_cond_init(&buffer_pool[i].processed_condition, NULL);
+    queue_add(state.free_queue, i);
   }
   for (int i = 0; i < CLIENT_COUNT; i++) {
     pthread_create(&clients[i], NULL, client_main_loop, &state);

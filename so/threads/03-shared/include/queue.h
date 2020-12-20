@@ -8,6 +8,8 @@ typedef struct {
   int first;
   int last;
   pthread_mutex_t lock;
+  pthread_cond_t is_empty_condition;
+  int size;
 } queue_t;
 
 queue_t* queue_create();

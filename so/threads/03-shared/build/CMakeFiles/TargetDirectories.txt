@@ -1,3 +1,0 @@
-/home/andre/repos/escolisca/so/threads/03-shared/build/CMakeFiles/rebuild_cache.dir
-/home/andre/repos/escolisca/so/threads/03-shared/build/CMakeFiles/edit_cache.dir
-/home/andre/repos/escolisca/so/threads/03-shared/build/CMakeFiles/program03.dir

@@ -19,12 +19,13 @@ void buffer_process(buffer_t* buffer) {
 }
 
 void buffer_print(buffer_t* buffer) {
-  printf("%c -> length = %d, digit = %d, letter = %d\n",
+  printf("%s -> length = %d, digit = %d, letter = %d\n",
          buffer->to_process,
          buffer->statistics.char_count,
          buffer->statistics.digit_count,
          buffer->statistics.letters_count);
 }
 void buffer_clear(buffer_t* buffer) {
-  memset(buffer, 0, sizeof(buffer_t) - sizeof(pthread_mutex_t) - sizeof(pthread_cond_t));
+  memset(buffer->to_process, 0, BUFFER_STR_MAX_SIZE);
+  buffer->processed = false;
 }

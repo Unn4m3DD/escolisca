@@ -1,6 +1,6 @@
 #include <stdlib.h>
 static char* random_string(char* str, int size) {
-  const char charset[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJK...";
+  const char charset[] = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVXZ0123456789 ";
   if (size) {
     --size;
     for (int n = 0; n < size; n++) {
