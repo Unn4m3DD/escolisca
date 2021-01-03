@@ -1,5 +1,6 @@
 #pragma once
-#define QUEUE_MAX_SIZE 10
+#include "main.h"
+#define QUEUE_MAX_SIZE BUFFER_COUNT
 #include <pthread.h>
 #include <string.h>
 #include <malloc.h>

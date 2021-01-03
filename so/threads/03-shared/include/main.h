@@ -1,4 +1,7 @@
 #pragma once
+#define BUFFER_COUNT 50
+#define SERVER_COUNT 5
+#define CLIENT_COUNT 5
 #include "queue.h"
 #include "buffer.h"
 
