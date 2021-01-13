@@ -34,9 +34,10 @@
 #ifndef DBC_H
 #define DBC_H
 
+#include <assert.h>
 #include <stdio.h>
 #include <stdlib.h>
-#include <assert.h>
+
 #include "utils.h"
 
 #ifdef NDEBUG
@@ -67,9 +68,9 @@
 #else
 #ifdef EXCEPTION_POLICY
 #define check(condition, message) \
-   if (!(condition)) \
-      throw string_concat(NULL, 0, (char*)"Assertion fail", message[0] ? (char*)": " : (char*)"", message, (char*)", assertion: \"", #condition, (char*)"\", function: \"", __FUNCTION__, (char*)"\":", int2str(__LINE__), (char*)", file: \"", __FILE__, (char*)"\"\n", NULL)
-#else // EXIT_POLICY (default)
+  if (!(condition))               \
+  throw string_concat(NULL, 0, (char*)"Assertion fail", message[0] ? (char*)": " : (char*)"", message, (char*)", assertion: \"", #condition, (char*)"\", function: \"", __FUNCTION__, (char*)"\":", int2str(__LINE__), (char*)", file: \"", __FILE__, (char*)"\"\n", NULL)
+#else  // EXIT_POLICY (default)
 /**
  *  \brief Checks the verification of an general algorithm assertion.
  *
@@ -78,17 +79,16 @@
  *  \param [in] condition expression to assert its truthness
  *  \param [in] message text to be presented with error information when the assertion fails
  */
-#define check(condition, message) \
-   if (!(condition)) \
-      do { \
-         fprintf (stderr, "Assertion fail%s%s, assertion: \"%s\", function: \"%s\":%d, file: \"%s\"\n", \
-                  message[0] ? ": " : "", message, #condition, __FUNCTION__, __LINE__ , __FILE__); \
-         *((int*)0) = 0; \
-         abort (); \
-      } while (0)
+#define check(condition, message)                                                                   \
+  if (!(condition))                                                                                 \
+    do {                                                                                            \
+      fprintf(stderr, "Assertion fail%s%s, assertion: \"%s\", function: \"%s\":%d, file: \"%s\"\n", \
+              message[0] ? ": " : "", message, #condition, __FUNCTION__, __LINE__, __FILE__);       \
+      *((int*)0) = 0;                                                                               \
+      abort();                                                                                      \
+  } while (0)
 #endif
 #endif
-
 
 // precondition:
 #ifdef NDEBUG_PRECONDITIONS
@@ -96,9 +96,9 @@
 #else
 #ifdef EXCEPTION_POLICY
 #define require(condition, message) \
-   if (!(condition)) \
-      throw string_concat(NULL, 0, (char*)"Precondition fail", message[0] ? (char*)": " : (char*)"", message, (char*)", assertion: \"", #condition, (char*)"\", function: \"", __FUNCTION__, (char*)"\":", int2str(__LINE__), (char*)", file: \"", __FILE__, (char*)"\"\n", NULL)
-#else // EXIT_POLICY (default)
+  if (!(condition))                 \
+  throw string_concat(NULL, 0, (char*)"Precondition fail", message[0] ? (char*)": " : (char*)"", message, (char*)", assertion: \"", #condition, (char*)"\", function: \"", __FUNCTION__, (char*)"\":", int2str(__LINE__), (char*)", file: \"", __FILE__, (char*)"\"\n", NULL)
+#else  // EXIT_POLICY (default)
 /**
  *  \brief Checks the verification of a precondition.
  *
@@ -107,17 +107,16 @@
  *  \param [in] condition expression to assert its truthness
  *  \param [in] message text to be presented with error information when the assertion fails
  */
-#define require(condition, message) \
-   if (!(condition)) \
-      do { \
-         fprintf (stderr, "Precondition fail%s%s, assertion: \"%s\", function: \"%s\":%d, file: \"%s\"\n", \
-                  message[0] ? ": " : "", message, #condition, __FUNCTION__, __LINE__ , __FILE__); \
-         *((int*)0) = 0; \
-         abort (); \
-      } while (0)
+#define require(condition, message)                                                                    \
+  if (!(condition))                                                                                    \
+    do {                                                                                               \
+      fprintf(stderr, "Precondition fail%s%s, assertion: \"%s\", function: \"%s\":%d, file: \"%s\"\n", \
+              message[0] ? ": " : "", message, #condition, __FUNCTION__, __LINE__, __FILE__);          \
+      *((int*)0) = 0;                                                                                  \
+      abort();                                                                                         \
+  } while (0)
 #endif
 #endif
-
 
 // postcondition:
 #ifdef NDEBUG_POSTCONDITIONS
@@ -125,9 +124,9 @@
 #else
 #ifdef EXCEPTION_POLICY
 #define ensure(condition, message) \
-   if (!(condition)) \
-      throw string_concat(NULL, 0, (char*)"Postcondition fail", message[0] ? (char*)": " : (char*)"", message, (char*)", assertion: \"", #condition, (char*)"\", function: \"", __FUNCTION__, (char*)"\":", int2str(__LINE__), (char*)", file: \"", __FILE__, (char*)"\"\n", NULL)
-#else // EXIT_POLICY (default)
+  if (!(condition))                \
+  throw string_concat(NULL, 0, (char*)"Postcondition fail", message[0] ? (char*)": " : (char*)"", message, (char*)", assertion: \"", #condition, (char*)"\", function: \"", __FUNCTION__, (char*)"\":", int2str(__LINE__), (char*)", file: \"", __FILE__, (char*)"\"\n", NULL)
+#else  // EXIT_POLICY (default)
 /**
  *  \brief Checks the verification of a postcondition.
  *
@@ -136,14 +135,14 @@
  *  \param [in] condition expression to assert its truthness
  *  \param [in] message text to be presented with error information when the assertion fails
  */
-#define ensure(condition, message) \
-   if (!(condition)) \
-      do { \
-         fprintf (stderr, "Postcondition fail%s%s, assertion: \"%s\", function: \"%s\":%d, file: \"%s\"\n", \
-                  message[0] ? ": " : "", message, #condition, __FUNCTION__, __LINE__ , __FILE__); \
-         *((int*)0) = 0; \
-         abort (); \
-      } while (0)
+#define ensure(condition, message)                                                                      \
+  if (!(condition))                                                                                     \
+    do {                                                                                                \
+      fprintf(stderr, "Postcondition fail%s%s, assertion: \"%s\", function: \"%s\":%d, file: \"%s\"\n", \
+              message[0] ? ": " : "", message, #condition, __FUNCTION__, __LINE__, __FILE__);           \
+      *((int*)0) = 0;                                                                                   \
+      abort();                                                                                          \
+  } while (0)
 #endif
 #endif
 
@@ -154,9 +153,9 @@
 #else
 #ifdef EXCEPTION_POLICY
 #define invariant(condition, message) \
-   if (!(condition)) \
-      throw string_concat(NULL, 0, (char*)"Invariant fail", message[0] ? (char*)": " : (char*)"", message, (char*)", assertion: \"", #condition, (char*)"\", function: \"", __FUNCTION__, (char*)"\":", int2str(__LINE__), (char*)", file: \"", __FILE__, (char*)"\"\n", NULL)
-#else // EXIT_POLICY (default)
+  if (!(condition))                   \
+  throw string_concat(NULL, 0, (char*)"Invariant fail", message[0] ? (char*)": " : (char*)"", message, (char*)", assertion: \"", #condition, (char*)"\", function: \"", __FUNCTION__, (char*)"\":", int2str(__LINE__), (char*)", file: \"", __FILE__, (char*)"\"\n", NULL)
+#else  // EXIT_POLICY (default)
 /**
  *  \brief Checks the verification of an invariant.
  *
@@ -165,14 +164,14 @@
  *  \param [in] condition expression to assert its truthness
  *  \param [in] message text to be presented with error information when the assertion fails
  */
-#define invariant(condition, message) \
-   if (!(condition)) \
-      do { \
-         fprintf (stderr, "Invariant fail%s%s, assertion: \"%s\", function: \"%s\":%d, file: \"%s\"\n", \
-                  message[0] ? ": " : "", message, #condition, __FUNCTION__, __LINE__ , __FILE__); \
-         *((int*)0) = 0; \
-         abort (); \
-      } while (0)
+#define invariant(condition, message)                                                               \
+  if (!(condition))                                                                                 \
+    do {                                                                                            \
+      fprintf(stderr, "Invariant fail%s%s, assertion: \"%s\", function: \"%s\":%d, file: \"%s\"\n", \
+              message[0] ? ": " : "", message, #condition, __FUNCTION__, __LINE__, __FILE__);       \
+      *((int*)0) = 0;                                                                               \
+      abort();                                                                                      \
+  } while (0)
 #endif
 #endif
 
@@ -183,4 +182,3 @@
  * @} close group DbC
  **/
 /* ************************************************** */
-
