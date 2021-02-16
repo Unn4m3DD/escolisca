@@ -26,11 +26,11 @@
 /**
  *  \brief initial priority value for Manchester system colors
  */
-#define RED     1
-#define ORANGE  2
-#define YELLOW  4
-#define GREEN   8
-#define BLUE   16
+#define RED 1
+#define ORANGE 2
+#define YELLOW 4
+#define GREEN 8
+#define BLUE 16
 
 /**
  *  \brief maximum elements in FIFO
@@ -60,17 +60,34 @@
 /**
  *  \brief id verification test
  */
-#define check_valid_id(id) do { if(id > MAX_ID) { printf("\e[31;01m[%s, line %d, function %s] ERROR: invalid ID %u!\e[0m\n", __FILE__, __LINE__, __FUNCTION__, id); exit(EXIT_FAILURE); } } while(0)
+#define check_valid_id(id)                                                                                              \
+  do {                                                                                                                  \
+    if (id > MAX_ID) {                                                                                                  \
+      printf("\e[31;01m[%s, line %d, function %s] ERROR: invalid ID %u!\e[0m\n", __FILE__, __LINE__, __FUNCTION__, id); \
+      exit(EXIT_FAILURE);                                                                                               \
+    }                                                                                                                   \
+  } while (0)
 
 /**
  *  \brief priority verification test
  */
-#define check_valid_priority(priority) do { if(priority < 1 || priority > MAX_PRIORITY) { printf("\e[31;01m[%s, line %d, function %s] ERROR: invalid priority %u!\e[0m\n", __FILE__, __LINE__, __FUNCTION__, priority); exit(EXIT_FAILURE); } } while(0)
+#define check_valid_priority(priority)                                                                                              \
+  do {                                                                                                                              \
+    if (priority < 1 || priority > MAX_PRIORITY) {                                                                                  \
+      printf("\e[31;01m[%s, line %d, function %s] ERROR: invalid priority %u!\e[0m\n", __FILE__, __LINE__, __FUNCTION__, priority); \
+      exit(EXIT_FAILURE);                                                                                                           \
+    }                                                                                                                               \
+  } while (0)
 
 /**
  *  \brief patient name verification test
  */
-#define check_valid_name(name) do { if(name[0] == '\0') { printf("\e[31;01m[%s, line %d, function %s] ERROR: invalid patient with name \"%s\"!\e[0m\n", __FILE__, __LINE__, __FUNCTION__, name); exit(EXIT_FAILURE); } } while(0)
+#define check_valid_name(name)                                                                                                               \
+  do {                                                                                                                                       \
+    if (name[0] == '\0') {                                                                                                                   \
+      printf("\e[31;01m[%s, line %d, function %s] ERROR: invalid patient with name \"%s\"!\e[0m\n", __FILE__, __LINE__, __FUNCTION__, name); \
+      exit(EXIT_FAILURE);                                                                                                                    \
+    }                                                                                                                                        \
+  } while (0)
 
 #endif
-

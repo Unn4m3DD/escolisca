@@ -1,6 +1,6 @@
 .PHONY: clean cleanall
 
-CPPFLAGS=-Wall -Wno-write-strings -ggdb -pthread -Iinclude
+CPPFLAGS=-Wall -Wno-write-strings -ggdb -pthread -Iinclude 
 LDFLAGS = -Llib -lsoconcur
 SYMBOLS=-DEXIT_POLICY            # -DEXCEPTION_POLICY or -DEXIT_POLICY
 

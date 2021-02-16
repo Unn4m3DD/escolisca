@@ -1,0 +1,12 @@
+{
+  "files.associations": {
+    "*.html": "html",
+    "*.pl": "prolog",
+    "*.bdl": "bdl",
+    "*.shader": "glsl",
+    "mutex": "cpp",
+    "condition_variable": "cpp",
+    "ostream": "cpp",
+    "iostream": "cpp"
+  }
+}

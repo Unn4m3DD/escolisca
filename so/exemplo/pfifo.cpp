@@ -34,9 +34,9 @@ int full_pfifo(PriorityFIFO* pfifo) {
 
 /* changes may be required to this function */
 void insert_pfifo(PriorityFIFO* pfifo, uint32_t id, uint32_t priority) {
-  mutex_lock(&pfifo->insertion_mutex);
-  while (pfifo->cnt == FIFO_MAXSIZE)
-    pthread_cond_wait(&pfifo->not_full, &pfifo->insertion_mutex);
+  mutex_lock(&pfifo->lock);
+  while (full_pfifo(pfifo))
+    cond_wait(&pfifo->isNotFull, &pfifo->lock);
   require(pfifo != NULL, "NULL pointer to FIFO");                               // a false value indicates a program error
   require(id <= MAX_ID, "invalid id");                                          // a false value indicates a program error
   require(priority > 0 && priority <= MAX_PRIORITY, "invalid priority value");  // a false value indicates a program error
@@ -58,18 +58,17 @@ void insert_pfifo(PriorityFIFO* pfifo, uint32_t id, uint32_t priority) {
   pfifo->inp = (pfifo->inp + 1) % FIFO_MAXSIZE;
   pfifo->cnt++;
   //printf("[insert_pfifo] pfifo->inp=%d, pfifo->out=%d\n", pfifo->inp, pfifo->out);
-  cond_signal(&pfifo->not_empty);
-  mutex_unlock(&pfifo->insertion_mutex);
+  cond_signal(&pfifo->isNotEmpty);
+  mutex_unlock(&pfifo->lock);
 }
 
 /* --------------------------------------- */
 
 /* changes may be required to this function */
 uint32_t retrieve_pfifo(PriorityFIFO* pfifo) {
-  mutex_lock(&pfifo->retrieval_mutex);
-  while (pfifo->cnt == 0)
-    pthread_cond_wait(&pfifo->not_empty, &pfifo->retrieval_mutex);
-
+  mutex_lock(&pfifo->lock);
+  while (empty_pfifo(pfifo))
+    cond_wait(&pfifo->isNotEmpty, &pfifo->lock);
   require(pfifo != NULL, "NULL pointer to FIFO");  // a false value indicates a program error
   require(!empty_pfifo(pfifo), "empty FIFO");      // in a shared fifo, it may not result from a program error!
   check_valid_id(pfifo->array[pfifo->out].id);
@@ -88,9 +87,8 @@ uint32_t retrieve_pfifo(PriorityFIFO* pfifo) {
       pfifo->array[idx].priority--;
     idx = (idx + 1) % FIFO_MAXSIZE;
   }
-  cond_signal(&pfifo->not_full);
-  mutex_unlock(&pfifo->retrieval_mutex);
-
+  cond_signal(&pfifo->isNotFull);
+  mutex_unlock(&pfifo->lock);
   return result;
 }
 

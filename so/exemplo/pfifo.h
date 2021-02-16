@@ -11,30 +11,28 @@
  *    \li retrieval of a value.
  **/
 
-
 #ifndef PFIFO_H
 #define PFIFO_H
 
 #include <stdint.h>
-#include  "settings.h"
 
+#include "settings.h"
 #include "thread.h"
 //#include "process.h"
 
 typedef struct
 {
-   struct
-   {
-      uint32_t id;         // element ID (works as an index in array all_patients)
-      uint32_t priority;   // patient priority in FIFO
-   } array[FIFO_MAXSIZE];
-   uint32_t inp;  ///< point of insertion (queue tail)
-   uint32_t out;  ///< point of retrieval (queue head)
-   uint32_t cnt;  ///< number of items stored
-   pthread_mutex_t insertion_mutex;
-   pthread_mutex_t retrieval_mutex;
-   pthread_cond_t not_empty;
-   pthread_cond_t not_full;
+  struct
+  {
+    uint32_t id;        // element ID (works as an index in array all_patients)
+    uint32_t priority;  // patient priority in FIFO
+  } array[FIFO_MAXSIZE];
+  uint32_t inp;  ///< point of insertion (queue tail)
+  uint32_t out;  ///< point of retrieval (queue head)
+  uint32_t cnt;  ///< number of items stored
+  pthread_mutex_t lock = PTHREAD_MUTEX_INITIALIZER;
+  pthread_cond_t isNotFull = PTHREAD_COND_INITIALIZER;
+  pthread_cond_t isNotEmpty = PTHREAD_COND_INITIALIZER;
 } PriorityFIFO;
 
 void init_pfifo(PriorityFIFO* pfifo);
